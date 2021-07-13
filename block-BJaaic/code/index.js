@@ -10,29 +10,36 @@ let userMethod = {
         console.log(`I live in ${this.location} and I have ${this.numberOfLegs}`)
     }
 }
-
-//user
-// {
-//     location:"Himachal",
-//     numberOfLegs : "4",
-//     _proto_:{
-//         eat(){
-
-//         }
-//         changeLocation(){
-
-//         }
-//         summary(){
-
-//         }
-//     }
-// }
-
-
-
 function createUser(location,numberofLegs){
     let user = Object.create(userMethod);
     user.location = location;
     user.numberofLegs = numberofLegs;
     return user;
 }
+function createDog(location,numberofLegs,name,color){
+    let user = createUser(location,numberofLegs)
+    Object.setPrototypeOf(user,dogsMethod);
+    user.name = name;
+    user.color = color;
+    return user;
+}
+
+let dogsMethod = {
+    bark(){
+        alert(`I am ${this.name} and I can bark 🐶`)
+    },
+    changeName(name){
+        this.name = name;
+        return this.name
+    },
+    changeColor(newColor){
+        this.color = newColor;
+        return this.color
+    },
+    summary(){
+        return (`I am ${this.name} and I am of ${this.color} color. I can also bark`)
+
+    },
+}
+
+Object.setPrototypeOf(dogsMethod,userMethod)
