@@ -3,10 +3,11 @@ let userMethod = {
         console.log(`I live in ${this.location} an I can eat`)
     },
     changeLocation:function(newLocation){
-        return newLocation;
+        this.location = newLocation;
+        return this.location;
     },
     summary:function(){
-        return (`I live in ${this.location} and I have ${this.numberOfLegs}`)
+        console.log(`I live in ${this.location} and I have ${this.numberOfLegs}`)
     }
 }
 
