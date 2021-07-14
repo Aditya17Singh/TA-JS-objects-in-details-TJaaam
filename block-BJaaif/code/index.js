@@ -5,7 +5,8 @@
 /*** CHALLENGE 1 of 1 ***/
 
 function makePerson(name, age) {
-  // add code here
+  let obj = Object.create()
+  
 }
 
 var vicky = makePerson('Vicky', 24);
