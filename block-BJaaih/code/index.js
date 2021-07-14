@@ -3,7 +3,10 @@
 `myMap` will behave similar to how the `Array.map` works. To test the implementation use the code below.
 */
 
-// myMap function goes here
+
+
+
+wkdj
 
 // Test the myMap function you created above
 
