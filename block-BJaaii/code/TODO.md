@@ -12,6 +12,9 @@ Queue
 
 Data:
 
+
+
+
 - `stack`
 
 Methods:
