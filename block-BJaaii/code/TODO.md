@@ -14,7 +14,6 @@ Data:
 
 
 
-
 - `stack`
 
 Methods:
