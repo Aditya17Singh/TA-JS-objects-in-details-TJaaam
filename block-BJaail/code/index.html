@@ -5,8 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book-App</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="modal">
+        <div class="container">
+            <h1 class="form_title">
+                Add New Books
+            </h1>
+            <form action="" class="form">
+                <input type="text"
+                name="bookName"
+                placeholder="Name of the book"
+                />
+                <input type="text"
+                name="bookAuthor"
+                placeholder="Name of the book"
+                />
+                <input type="text"
+                name="bookImage"
+                placeholder="Name of the book"
+                />
+                <button class="form_button" type="submit">
+                    submit
+                </button>
+            </form>
+        </div>
+        <div class="books container">
+            <ul class="book_list">
+                <li>
+                    <h1>
+                        Sapiens
+                    </h1>
+                    <p>
+                        Yuval Nval Harri
+                    </p>
+                    <button class="form_button">
+                        Mark as read!
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
     <script src="../code/index.js"></script>
 </body>
 </html>
