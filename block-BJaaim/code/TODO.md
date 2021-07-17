@@ -22,6 +22,7 @@ Check if the given answer is correct or not. It will accept one answer and retur
 
 - createUI (this will create the layout of a single question)
 
+
 This method will decide how the UI of a question look like. Calling this function should add the UI in the DOM.
 
 ### Make quiz class with these data and properties
